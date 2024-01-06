@@ -1,1 +1,0 @@
-# IITJ_SecondShopify
