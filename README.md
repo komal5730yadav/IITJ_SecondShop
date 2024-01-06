@@ -44,4 +44,6 @@ For a visual overview of the features mentioned above, please refer to the attac
 ![React App - Personal - Microsoft​ Edge 1_6_2024 8_08_25 AM](https://github.com/komal5730yadav/IITJ_SecondShopify/assets/133533646/c4036261-0e41-4eb1-8b86-04b9db3299ec)
 ![React App - Personal - Microsoft​ Edge 1_6_2024 8_10_48 AM](https://github.com/komal5730yadav/IITJ_SecondShopify/assets/133533646/d156f806-3b10-47ac-a535-0d8d95c1264c)
 ![React App - Personal - Microsoft​ Edge 1_6_2024 8_11_13 AM](https://github.com/komal5730yadav/IITJ_SecondShopify/assets/133533646/45cad466-29ef-4bb0-838d-dd74665b5c46)
+![● README md - Eshop-tutorial - Visual Studio Code 1_6_2024 9_03_18 AM](https://github.com/komal5730yadav/IITJ_SecondShopify/assets/133533646/667b7f29-a915-4510-ac31-5dcd3333fa27)
+
 
