@@ -37,7 +37,7 @@ const EventsPage = () => {
           {data && data.map((i, index) => <EventCard active={true} data={i} key={index} />)}
           {/* <EventCard active={true} data={allEvents && allEvents[0]} /> */}
         </div>
-        <Footer/>
+        <Footer/>                                 
         </div>
       )}
     </>
