@@ -1,10 +1,8 @@
 import React from "react";
 import {
-  AiFillFacebook,
   AiFillInstagram,
   AiFillMail,
   AiFillYoutube,
-  AiOutlineTwitter,
 } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import {
@@ -17,11 +15,11 @@ import { CgWebsite } from "react-icons/cg";
 const Footer = () => {
   return (
     <div className="bg-[#000] text-white">
-      <div className="md:flex md:justify-between md:items-center sm:px-12 px-4 bg-[#5d4b4948] py-7">
+      <div className="md:flex md:justify-between md:items-center sm:px-12 px-4 bg-[#60656d] py-7">
         <h1 className="lg:text-4xl text-3xl md:mb-0 mb-6 lg:leading-normal font-semibold md:w-2/5">
-          <span className="text-[#56d879]">Subscribe</span> us for getting updates{" "}
+          <span className="text-[#f59466]">Subscribe</span> & Let's Stay Connected :) {" "}
           <br />
-          and notify
+          
         </h1>
         <div>
           <input
@@ -31,7 +29,7 @@ const Footer = () => {
             className="text-gray-800
                 sm:w-72 w-full sm:mr-5 mr-1 lg:mb-0 mb-4 py-2.5 rounded px-2 focus:outline-none"
           />
-          <button className="bg-[#56d879] hover:bg-teal-500 duration-300 px-5 py-2.5 rounded-md text-whie md:w-auto w-full">
+          <button className="bg-[#f59466] hover:bg-teal-500 duration-300 px-5 py-2.5 rounded-md text-whie md:w-auto w-full">
             Submit
           </button>
         </div>
@@ -44,20 +42,17 @@ const Footer = () => {
             style={{ filter: "brightness(0) invert(1)" }}
           />
           <br />
-          <p>The home and elements needeed to create beatiful products.</p>
+          <p>The products and elements needeed to create your beautiful home.</p>
           <div className="flex items-center mt-[15px]">
             <AiFillMail size={30} className="cursor-pointer" />
-
-
             <AiFillYoutube
               size={30}
               style={{ marginLeft: "20px", cursor: "pointer" }}
             />
           </div>
         </ul>
-
         <ul className="text-center sm:text-start">
-          <h1 className="mb-1 font-semibold">Company</h1>
+          <h1 className="mb-1 font-semibold"> WEB</h1>
           {footerProductLinks.map((link,index) => (
             <li key={index}>
               <Link
@@ -72,7 +67,7 @@ const Footer = () => {
         </ul>
 
         <ul className="text-center sm:text-start">
-          <h1 className="mb-1 font-semibold">Shop</h1>
+          <h1 className="mb-1 font-semibold">SHOP</h1>
           {footercompanyLinks.map((link,index) => (
             <li key={index}>
               <Link
@@ -87,7 +82,7 @@ const Footer = () => {
         </ul>
 
         <ul className="text-center sm:text-start">
-          <h1 className="mb-1 font-semibold">Support</h1>
+          <h1 className="mb-1 font-semibold">SUPPORT</h1>
           {footerSupportLinks.map((link,index) => (
             <li key={index}>
               <Link

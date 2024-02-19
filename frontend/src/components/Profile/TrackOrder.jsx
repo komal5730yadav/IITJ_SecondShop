@@ -24,26 +24,26 @@ const TrackOrder = () => {
           <h1 className="text-[20px]">Your Order is processing in shop.</h1>
         ) : data?.status === "Transferred to delivery partner" ? (
           <h1 className="text-[20px]">
-            Your Order is on the way for delivery partner.
+            Your order is on the way of getting pack.
           </h1>
         ) : data?.status === "Shipping" ? (
           <h1 className="text-[20px]">
-            Your Order is on the way with our delivery partner.
+            Your order is on the way to get shipped.
           </h1>
         ) : data?.status === "Received" ? (
           <h1 className="text-[20px]">
-            Your Order is in your city. Our Delivery man will deliver it.
+            Your Order is in your city. Our delivery man will deliver it to you ASAP.
           </h1>
         ) : data?.status === "On the way" ? (
           <h1 className="text-[20px]">
-            Our Delivery man is going to deliver your order.
+            Our Delivery man is on its way to deliver your order.
           </h1>
         ) : data?.status === "Delivered" ? (
-          <h1 className="text-[20px]">Your order is delivered!</h1>
+          <h1 className="text-[20px]">Your order is delivered:)</h1>
         ) : data?.status === "Processing refund" ? (
           <h1 className="text-[20px]">Your refund is processing!</h1>
         ) : data?.status === "Refund Success" ? (
-          <h1 className="text-[20px]">Your Refund is success!</h1>
+          <h1 className="text-[20px]">Your refund is successful!</h1>
         ) : null}
       </>
     </div>

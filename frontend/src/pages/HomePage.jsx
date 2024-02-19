@@ -11,7 +11,7 @@ const HomePage = () => {
   return (
     <div>
         <Header activeHeading={1} />
-        <Hero />
+        <Hero activeHeading={1} />
         <Categories />
         <BestDeals />
         <Events />

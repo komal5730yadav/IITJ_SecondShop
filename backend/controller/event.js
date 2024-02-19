@@ -38,11 +38,11 @@ router.post(
           });
         }
 
-        const productData = req.body;
-        productData.images = imagesLinks;
-        productData.shop = shop;
+        const eventData = req.body;
+        eventData.images = imagesLinks;
+        eventData.shop = shop;
 
-        const event = await Event.create(productData);
+        const event = await Event.create(eventData);
 
         res.status(201).json({
           success: true,
@@ -88,21 +88,23 @@ router.get(
 // delete event of a shop
 router.delete(
   "/delete-shop-event/:id",
+  isSeller,
   catchAsyncErrors(async (req, res, next) => {
     try {
       const event = await Event.findById(req.params.id);
 
-      if (!product) {
-        return next(new ErrorHandler("Product is not found with this id", 404));
+      if (!event) {
+        return next(new ErrorHandler("Event is not found with this id", 404));
       }    
 
-      for (let i = 0; 1 < product.images.length; i++) {
+      for (let i = 0; i < event.images.length; i++) {
         const result = await cloudinary.v2.uploader.destroy(
           event.images[i].public_id
         );
       }
     
-      await event.remove();
+      // await event.remove();
+      await Event.findByIdAndDelete(req.params.id);
 
       res.status(201).json({
         success: true,

@@ -12,7 +12,10 @@ export const navItems = [
       title: "Products",
       url: "/products",
     },
-
+    {
+      title: "Events",
+      url: "/events",
+    },
     {
       title: "FAQ",
       url: "/faq",
@@ -198,7 +201,7 @@ export const navItems = [
       title: "cosmetics and body care",
       subTitle: "",
       image_Url:
-        "https://i.postimg.cc/jdQKBk8X/care.jpg",
+        "https://i.ibb.co/sP6t7x2/istockphoto-1069113766-612x612.jpg",
     },
     {
       id: 3,
@@ -226,13 +229,13 @@ export const navItems = [
       title: "Cycles",
       subTitle: "",
       image_Url:
-      "https://i.postimg.cc/KvnvxYYt/cycle.jpg",
+      "https://i.ibb.co/n89C1LP/download.jpg",
     },
     {
       id: 7,
       title: "Buckets & Pots",
       subTitle: "",
-      image_Url: "https://i.postimg.cc/W442G6w7/pott.jpg",
+      image_Url: "https://i.ibb.co/R9r2npW/buckk.jpg",
     },
     {
       id: 8,
@@ -594,53 +597,56 @@ export const navItems = [
       link: "/about"
     },
     {
-      name: "Careers",
-      link: "/carrers"
-    },
-    {
-      name: "Store Locations",
-    },
-    {
       name: "Our Blog",
+      link:"/about"
     },
     {
-      name: "Reviews",
+      name: "Our Reviews",
+      link:"/ourreview"
+    },
+    {
+      name: "Demo Video",
+      link: "/demo"
     },
   ];
   
   export const footercompanyLinks = [
+    
     {
-      name: "Game & Video",
+      name: "Electronics",
+      link: "/products?category=Computers%20and%20Laptops%20&%20Accessories"
     },
     {
-      name: "Phone &Tablets",
+      name: "Decoratives",
+      link: "/products?category=${i.title}"
     },
     {
-      name: "Computers & Laptop",
+      name: "Cosmetics & Bodycare",
+      link: "/products?category=cosmetics%20and%20body%20care"
     },
     {
-      name: "Sport Watches",
-    },
-    {
-      name: "Events",
+      name:"Containers & Cookware",
+      link:"/products?category=Buckets%20&%20Pots"
     },
   ];
   
   export const footerSupportLinks = [
     {
       name: "FAQ",
+      link: "/faq"
     },
     {
       name: "Reviews",
+      link: "/ourreview"
     },
     {
       name: "Contact Us",
+      link: "/contact"
     },
     {
-      name: "Shipping",
+      name: "Privacy",
+      link: "/privacy"
     },
-    {
-      name: "Live chat",
-    },
+
   ];
   

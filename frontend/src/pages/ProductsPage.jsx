@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { useSearchParams } from "react-router-dom";
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
+import AddHeader from "../components/Layout/AddHeader";
 import Loader from "../components/Layout/Loader";
 import ProductCard from "../components/Route/ProductCard/ProductCard";
 import styles from "../styles/styles";
@@ -33,6 +34,7 @@ const ProductsPage = () => {
     ) : (
       <div>
       <Header activeHeading={3} />
+      <AddHeader activeHeading={3} />
       <br />
       <br />
       <div className={`${styles.section}`}>

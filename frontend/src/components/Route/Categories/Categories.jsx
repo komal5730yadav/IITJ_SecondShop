@@ -2,12 +2,43 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { brandingData, categoriesData } from "../../../static/data";
 import styles from "../../../styles/styles";
-
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 const Categories = () => {
+  var settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: false,
+    responsive: [
+      { 
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
   const navigate = useNavigate();
   return (
     <>
-      <div className={`${styles.section} hidden sm:block`}>
+          <div className={`${styles.section} hidden sm:block`}>
         <div
           className={`branding my-12 flex justify-between w-full shadow-sm bg-white p-5 rounded-md`}
         >
@@ -24,31 +55,36 @@ const Categories = () => {
         </div>
       </div>
 
+
       <div
-        className={`${styles.section} bg-white p-6 rounded-lg mb-12`}
+        className={"w-11/10 mx-auto bg-white pt-2 p-1 rounded-lg mb-2 "}
         id="categories"
       >
-        <div className="grid grid-cols-1 gap-[5px] md:grid-cols-2 md:gap-[10px] lg:grid-cols-4 lg:gap-[20px] xl:grid-cols-5 xl:gap-[30px]">
-          {categoriesData &&
-            categoriesData.map((i) => {
-              const handleSubmit = (i) => {
-                navigate(`/products?category=${i.title}`);
-              };
-              return (
-                <div
-                  className="w-full h-[100px] flex items-center justify-between cursor-pointer overflow-hidden"
-                  key={i.id}
-                  onClick={() => handleSubmit(i)}
-                >
-                  <h5 className={`text-[18px] leading-[1.3]`}>{i.title}</h5>
-                  <img
-                    src={i.image_Url}
-                    className="w-[120px] object-cover"
-                    alt=""
-                  />
-                </div>
-              );
-            })}
+        <div>
+          <Slider {...settings}>
+            {categoriesData &&
+              categoriesData.map((i) => {
+                const handleSubmit = () => {
+                  navigate(`/products?category=${i.title}`);
+                };
+                return (
+                  <div
+                    className="w-full h-25 flex flex-col items-center text-center justify-between cursor-pointer overflow-hidden"
+                    key={i.id}
+                    onClick={handleSubmit}
+                  >
+                    <h3 className={"text-[16px] md:text-base leading-[1.2] flex-grow pr-20"}>{i.title}</h3>
+                    <div className="w-2/3 h-1/2">
+                      <img
+                        src={i.image_Url}
+                        className="w-full h-full object-cover"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                );
+              })}
+          </Slider>
         </div>
       </div>
     </>

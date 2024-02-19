@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
 import styles from "../styles/styles";
-
+import AddHeader from "../components/Layout/AddHeader"
 const FAQPage = () => {
   return (
     <div>
-      <Header activeHeading={5} />
+      <Header  />
+      <AddHeader activeHeading={5}/>
       <Faq />
       <Footer />
     </div>
@@ -15,7 +16,6 @@ const FAQPage = () => {
 
 const Faq = () => {
   const [activeTab, setActiveTab] = useState(0);
-
   const toggleTab = (tab) => {
     if (activeTab === tab) {
       setActiveTab(0);

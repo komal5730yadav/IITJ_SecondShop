@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import {
   AiFillHeart,
   AiFillStar,
@@ -21,6 +22,7 @@ import { toast } from "react-toastify";
 import Ratings from "../../Products/Ratings";
 
 const ProductCard = ({ data,isEvent }) => {
+
   const { wishlist } = useSelector((state) => state.wishlist);
   const { cart } = useSelector((state) => state.cart);
   const [click, setClick] = useState(false);
@@ -62,8 +64,10 @@ const ProductCard = ({ data,isEvent }) => {
 
   return (
     <>
-      <div className="w-full h-[370px] bg-white rounded-lg shadow-sm p-3 relative cursor-pointer">
+
+      <div className="w-full h-[370px] bg-white rounded-lg shadow-sm p-3 relative cursor-pointer ">
         <div className="flex justify-end"></div>
+        
         <Link to={`${isEvent === true ? `/product/${data._id}?isEvent=true` : `/product/${data._id}`}`}>
           <img
             src={`${data.images && data.images[0]?.url}`}
@@ -72,13 +76,12 @@ const ProductCard = ({ data,isEvent }) => {
           />
         </Link>
         <Link to={`/shop/preview/${data?.shop._id}`}>
-          <h5 className={`${styles.shop_name}`}>{data.shop.name}</h5>
+          <h5 className={`${styles.shop_name} `}>{data.shop.name}</h5>
         </Link>
         <Link to={`${isEvent === true ? `/product/${data._id}?isEvent=true` : `/product/${data._id}`}`}>
-          <h4 className="pb-3 font-[500]">
+          <h4 className="mb-2 text-lg font-medium dark:text-white text-gray-900">
             {data.name.length > 40 ? data.name.slice(0, 40) + "..." : data.name}
           </h4>
-
           <div className="flex">
           <Ratings rating={data?.ratings} />
           </div>
@@ -95,7 +98,7 @@ const ProductCard = ({ data,isEvent }) => {
                 {data.originalPrice ? data.originalPrice + " ₹" : null}
               </h4>
             </div>
-            <span className="font-[400] text-[17px] text-[#68d284]">
+            <span className="font-[400] text-[17px] text-[rgb(112,54,54)]">
               {data?.sold_out} sold
             </span>
           </div>
@@ -137,6 +140,7 @@ const ProductCard = ({ data,isEvent }) => {
           {open ? <ProductDetailsCard setOpen={setOpen} data={data} /> : null}
         </div>
       </div>
+     
     </>
   );
 };

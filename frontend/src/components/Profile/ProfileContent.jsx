@@ -23,6 +23,8 @@ import { useEffect } from "react";
 import { toast } from "react-toastify";
 import axios from "axios";
 import { getAllOrdersOfUser } from "../../redux/actions/order";
+import UserInbox from "../../pages/UserInbox";
+import ProfileSidebar from "./ProfileSidebar";
 
 const ProfileContent = ({ active }) => {
   const { user, error, successMessage } = useSelector((state) => state.user);
@@ -174,6 +176,13 @@ const ProfileContent = ({ active }) => {
           <AllRefundOrders />
         </div>
       )}
+      {active === 4 && (
+        <div>
+          <UserInbox />
+        </div>
+      )}
+      
+
 
       {/* Track order */}
       {active === 5 && (
@@ -294,7 +303,7 @@ const AllRefundOrders = () => {
   }, []);
 
   const eligibleOrders =
-    orders && orders.filter((item) => item.status === "Processing refund");
+    orders && orders.filter((item) => item.status === "Processing refund"|| item.status === "Refund Success");
 
   const columns = [
     { field: "id", headerName: "Order ID", minWidth: 150, flex: 0.7 },
@@ -358,7 +367,6 @@ const AllRefundOrders = () => {
         status: item.status,
       });
     });
-
   return (
     <div className="pl-8 pt-1">
       <DataGrid
@@ -770,7 +778,7 @@ const Address = () => {
 
       {user && user.addresses.length === 0 && (
         <h5 className="text-center pt-8 text-[18px]">
-          You not have any saved address!
+          You don't have any saved address!
         </h5>
       )}
     </div>

@@ -21,7 +21,9 @@ const AllEvents = () => {
 
   const handleDelete = (id) => {
     dispatch(deleteEvent(id));
+    
     window.location.reload();
+    dispatch(getAllEventsShop(seller._id));
   }
 
   const columns = [
@@ -65,7 +67,7 @@ const AllEvents = () => {
         const product_name = d.replace(/\s+/g, "-");
         return (
           <>
-            <Link to={`/product/${product_name}`}>
+            <Link to={`/product/${params.id}?isEvent=true`}>
               <Button>
                 <AiOutlineEye size={20} />
               </Button>
@@ -102,9 +104,9 @@ const AllEvents = () => {
       row.push({
         id: item._id,
         name: item.name,
-        price: "US$ " + item.discountPrice,
+        price: "IN₹ " + item.discountPrice,
         Stock: item.stock,
-        sold: item.sold_out,
+        sold: item?.sold_out,
       });
     });
 

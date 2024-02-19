@@ -3,11 +3,13 @@ import CheckoutSteps from '../components/Checkout/CheckoutSteps'
 import Footer from '../components/Layout/Footer'
 import Header from '../components/Layout/Header'
 import Payment from "../components/Payment/Payment";
+import AddHeader from '../components/Layout/AddHeader';
 
 const PaymentPage = () => {
   return (
     <div className='w-full min-h-screen bg-[#f6f9fc]'>
        <Header />
+       <AddHeader/>
        <br />
        <br />
        <CheckoutSteps active={2} />

@@ -31,15 +31,15 @@ const ProfileSidebar = ({ setActive, active }) => {
       });
   };
   return (
-    <div className="w-full bg-white shadow-sm rounded-[10px] p-4 pt-8">
+    <div className="w-full h-[90vh] overflow-y-scroll bg-white shadow-sm rounded-[10px] sticky top-0 left-0 z-10 p-4 pt-8">
       <div
         className="flex items-center cursor-pointer w-full mb-8"
         onClick={() => setActive(1)}
       >
-        <RxPerson size={20} color={active === 1 ? "red" : ""} />
+        <RxPerson size={20} color={active === 1 ? "#e98a66" : ""} />
         <span
           className={`pl-3 ${
-            active === 1 ? "text-[red]" : ""
+            active === 1 ? "text-[#e98a66]" : ""
           } 800px:block hidden`}
         >
           Profile
@@ -49,10 +49,10 @@ const ProfileSidebar = ({ setActive, active }) => {
         className="flex items-center cursor-pointer w-full mb-8"
         onClick={() => setActive(2)}
       >
-        <HiOutlineShoppingBag size={20} color={active === 2 ? "red" : ""} />
+        <HiOutlineShoppingBag size={20} color={active === 2 ? "#e98a66" : ""} />
         <span
           className={`pl-3 ${
-            active === 2 ? "text-[red]" : ""
+            active === 2 ? "text-[#e98a66]" : ""
           } 800px:block hidden`}
         >
           Orders
@@ -62,10 +62,10 @@ const ProfileSidebar = ({ setActive, active }) => {
         className="flex items-center cursor-pointer w-full mb-8"
         onClick={() => setActive(3)}
       >
-        <HiOutlineReceiptRefund size={20} color={active === 3 ? "red" : ""} />
+        <HiOutlineReceiptRefund size={20} color={active === 3 ? "#e98a66" : ""} />
         <span
           className={`pl-3 ${
-            active === 3 ? "text-[red]" : ""
+            active === 3 ? "text-[#e98a66]" : ""
           } 800px:block hidden`}
         >
           Refunds
@@ -74,12 +74,12 @@ const ProfileSidebar = ({ setActive, active }) => {
 
       <div
         className="flex items-center cursor-pointer w-full mb-8"
-        onClick={() => setActive(4) || navigate("/inbox")}
+        onClick={() => setActive(4) || navigate("/inbox")} 
       >
-        <AiOutlineMessage size={20} color={active === 4 ? "red" : ""} />
+        <AiOutlineMessage size={20} color={active === 4 ? "#e98a66" : ""} />
         <span
-          className={`pl-3 ${
-            active === 4 ? "text-[red]" : ""
+          className={`pl-1 ${
+            active === 4 ? "text-[#e98a66]" : ""
           } 800px:block hidden`}
         >
           Inbox
@@ -90,10 +90,10 @@ const ProfileSidebar = ({ setActive, active }) => {
         className="flex items-center cursor-pointer w-full mb-8"
         onClick={() => setActive(5)}
       >
-        <MdOutlineTrackChanges size={20} color={active === 5 ? "red" : ""} />
+        <MdOutlineTrackChanges size={20} color={active === 5 ? "#e98a66" : ""} />
         <span
           className={`pl-3 ${
-            active === 5 ? "text-[red]" : ""
+            active === 5 ? "text-[#e98a66]" : ""
           } 800px:block hidden`}
         >
           Track Order
@@ -104,10 +104,10 @@ const ProfileSidebar = ({ setActive, active }) => {
         className="flex items-center cursor-pointer w-full mb-8"
         onClick={() => setActive(6)}
       >
-        <RiLockPasswordLine size={20} color={active === 6 ? "red" : ""} />
+        <RiLockPasswordLine size={20} color={active === 6 ? "#e98a66" : ""} />
         <span
           className={`pl-3 ${
-            active === 6 ? "text-[red]" : ""
+            active === 6 ? "text-[#e98a66]" : ""
           } 800px:block hidden`}
         >
           Change Password
@@ -118,10 +118,10 @@ const ProfileSidebar = ({ setActive, active }) => {
         className="flex items-center cursor-pointer w-full mb-8"
         onClick={() => setActive(7)}
       >
-        <TbAddressBook size={20} color={active === 7 ? "red" : ""} />
+        <TbAddressBook size={20} color={active === 7 ? "#e98a66" : ""} />
         <span
           className={`pl-3 ${
-            active === 7 ? "text-[red]" : ""
+            active === 7 ? "text-[#e98a66]" : ""
           } 800px:block hidden`}
         >
           Address
@@ -136,11 +136,11 @@ const ProfileSidebar = ({ setActive, active }) => {
           >
             <MdOutlineAdminPanelSettings
               size={20}
-              color={active === 7 ? "red" : ""}
+              color={active === 7 ? "#e98a66" : ""}
             />
             <span
               className={`pl-3 ${
-                active === 8 ? "text-[red]" : ""
+                active === 8 ? "text-[#e98a66]" : ""
               } 800px:block hidden`}
             >
               Admin Dashboard
@@ -152,10 +152,10 @@ const ProfileSidebar = ({ setActive, active }) => {
         className="single_item flex items-center cursor-pointer w-full mb-8"
         onClick={logoutHandler}
       >
-        <AiOutlineLogin size={20} color={active === 8 ? "red" : ""} />
+        <AiOutlineLogin size={20} color={active === 8 ? "#e98a66" : ""} />
         <span
           className={`pl-3 ${
-            active === 8 ? "text-[red]" : ""
+            active === 8 ? "text-[#e98a66]" : ""
           } 800px:block hidden`}
         >
           Log out
