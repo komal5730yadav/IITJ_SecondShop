@@ -17,12 +17,18 @@ import SellerActivationPage from "../pages/SellerActivationPage";
 import ShopLoginPage from "../pages/ShopLoginPage";
 import OrderDetailsPage from "../pages/OrderDetailsPage";
 import TrackOrderPage from "../pages/TrackOrderPage";
-import UserInbox from "../pages/UserInbox.jsx";
+import UserInboxPage from "../pages/UserInboxPage";
+import AddressPage from "../pages/AddressPage";
 import ContactUsPage from "../pages/ContactUsPage";
 import BlogPage from "../pages/BlogPage";
 import OurReviewPage from "../pages/OurReviewPage";
 import DemoVideoPage from "../pages/DemoVideoPage";
 import PrivacyPage from "../pages/PrivacyPage";
+import UserAllOrdersPage from "../pages/UserAllOrdersPage";
+import UserAllRefundOrdersPage from "../pages/UserAllRefundOrdersPage";
+import UserProfilePage from "../pages/UserprofilePage";
+import TrackOrderssPage from "../pages/Shop/TrackOrderssPage";
+import ChangePasswordPage from "../pages/ChangePasswordPage";
 export { 
     LoginPage,
     SignupPage,
@@ -41,12 +47,18 @@ export {
     ShopLoginPage,
     OrderDetailsPage,
     TrackOrderPage,
-    UserInbox,
+    UserInboxPage,
     AboutUsPage,
     ContactUsPage,
     BlogPage,
     OurReviewPage,
     DemoVideoPage,
     PrivacyPage,
-    EventsPage
+    EventsPage,
+    AddressPage,
+    UserAllOrdersPage,
+    UserAllRefundOrdersPage,
+    UserProfilePage,
+    TrackOrderssPage,
+    ChangePasswordPage,
 };

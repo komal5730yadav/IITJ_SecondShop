@@ -241,7 +241,7 @@ const Userin = () => {
       )}
 
       {open && (
-        <SellerInbox
+        <UserInbox
           setOpen={setOpen}
           newMessage={newMessage}
           setNewMessage={setNewMessage}
@@ -332,7 +332,7 @@ const MessageList = ({
   );
 };
 
-const SellerInbox = ({
+const UserInbox = ({
   setOpen,
   newMessage,
   setNewMessage,

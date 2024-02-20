@@ -16,7 +16,7 @@ import { toast } from "react-toastify";
 import { useSelector } from "react-redux";
 
 const ProfileSidebar = ({ setActive, active }) => {
-  const navigate = useNavigate();
+const navigate = useNavigate();
  const {user} = useSelector((state) => state.user);
   const logoutHandler = () => {
     axios
@@ -31,11 +31,9 @@ const ProfileSidebar = ({ setActive, active }) => {
       });
   };
   return (
-    <div className="w-full h-[90vh] overflow-y-scroll bg-white shadow-sm rounded-[10px] sticky top-0 left-0 z-10 p-4 pt-8">
-      <div
-        className="flex items-center cursor-pointer w-full mb-8"
-        onClick={() => setActive(1)}
-      >
+    <div className="w-full h-[90vh] bg-white shadow-sm overflow-y-scroll sticky top-0 left-0 z-10" onClick={() => setActive(1)}>
+      <div className="w-full flex items-center p-4"></div>
+       <Link to="/userprofile" className="w-full flex item-center">
         <RxPerson size={20} color={active === 1 ? "#e98a66" : ""} />
         <span
           className={`pl-3 ${
@@ -44,11 +42,14 @@ const ProfileSidebar = ({ setActive, active }) => {
         >
           Profile
         </span>
-      </div>
+        </Link>
+        <div/>
       <div
         className="flex items-center cursor-pointer w-full mb-8"
         onClick={() => setActive(2)}
       >
+         <Link to="/userallorders" className="w-full flex item-center">
+        
         <HiOutlineShoppingBag size={20} color={active === 2 ? "#e98a66" : ""} />
         <span
           className={`pl-3 ${
@@ -57,11 +58,13 @@ const ProfileSidebar = ({ setActive, active }) => {
         >
           Orders
         </span>
+        </Link>
       </div>
       <div
         className="flex items-center cursor-pointer w-full mb-8"
         onClick={() => setActive(3)}
       >
+        <Link to ="/userallrefundorders" className="w-full flex item-center">
         <HiOutlineReceiptRefund size={20} color={active === 3 ? "#e98a66" : ""} />
         <span
           className={`pl-3 ${
@@ -70,13 +73,12 @@ const ProfileSidebar = ({ setActive, active }) => {
         >
           Refunds
         </span>
+        </Link>
       </div>
-
       <div
-        className="flex items-center cursor-pointer w-full mb-8"
-        onClick={() => setActive(4) || navigate("/inbox")} 
-      >
-        <AiOutlineMessage size={20} color={active === 4 ? "#e98a66" : ""} />
+        className="flex items-center cursor-pointer w-full mb-8" onClick={() => setActive(4)}> 
+        <Link to="/inbox" className="w-full flex item-center">
+      <AiOutlineMessage size={20} color={active === 4 ? "#e98a66" : ""} />
         <span
           className={`pl-1 ${
             active === 4 ? "text-[#e98a66]" : ""
@@ -84,11 +86,13 @@ const ProfileSidebar = ({ setActive, active }) => {
         >
           Inbox
         </span>
+        </Link>
       </div>
       <div
         className="flex items-center cursor-pointer w-full mb-8"
         onClick={() => setActive(5)}
       >
+        <Link to="/trackorderss" className="w-full flex item-center">
         <MdOutlineTrackChanges size={20} color={active === 5 ? "#e98a66" : ""} />
         <span
           className={`pl-3 ${
@@ -97,12 +101,14 @@ const ProfileSidebar = ({ setActive, active }) => {
         >
           Track Order
         </span>
+        </Link>
       </div>
 
       <div
         className="flex items-center cursor-pointer w-full mb-8"
         onClick={() => setActive(6)}
       >
+        <Link to="/ChangePassword" className="w-full flex item-center">
         <RiLockPasswordLine size={20} color={active === 6 ? "#e98a66" : ""} />
         <span
           className={`pl-3 ${
@@ -111,12 +117,15 @@ const ProfileSidebar = ({ setActive, active }) => {
         >
           Change Password
         </span>
+        </Link>
       </div>
 
       <div
         className="flex items-center cursor-pointer w-full mb-8"
+
         onClick={() => setActive(7)}
       >
+        <Link to="/address" className="w-full flex item-center">
         <TbAddressBook size={20} color={active === 7 ? "#e98a66" : ""} />
         <span
           className={`pl-3 ${
@@ -125,6 +134,7 @@ const ProfileSidebar = ({ setActive, active }) => {
         >
           Address
         </span>
+        </Link>
       </div>
 
       {user && user?.role === "Admin" && (
@@ -157,7 +167,7 @@ const ProfileSidebar = ({ setActive, active }) => {
             active === 8 ? "text-[#e98a66]" : ""
           } 800px:block hidden`}
         >
-          Log out
+          Log Out
         </span>
       </div>
     </div>

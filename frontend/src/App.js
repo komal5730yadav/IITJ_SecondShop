@@ -25,8 +25,14 @@ import {
   ShopLoginPage,
   OrderDetailsPage,
   TrackOrderPage,
-  UserInbox,
+  UserInboxPage,
   EventsPage,
+  AddressPage,
+  UserAllOrdersPage,
+  UserAllRefundOrdersPage,
+  UserProfilePage,
+  TrackOrderssPage,
+  ChangePasswordPage,
 } from "./routes/Routes.js";
 import {
   ShopDashboardPage,
@@ -66,6 +72,7 @@ import axios from "axios";
 import { server } from "./server";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
+
 
 const App = () => {
   const [stripeApikey, setStripeApiKey] = useState("");
@@ -138,11 +145,64 @@ const App = () => {
             </ProtectedRoute>
           }
         />
+        
+        <Route
+          path="/userprofile"
+          element={
+            <ProtectedRoute>
+              <UserProfilePage />
+            </ProtectedRoute>
+          }
+        />
+        
+        <Route
+          path="/trackorderss"
+          element={
+            <ProtectedRoute>
+              <TrackOrderssPage />
+            </ProtectedRoute>
+          }
+        />
+        
+        <Route
+          path="/changepassword"
+          element={
+            <ProtectedRoute>
+              <ChangePasswordPage />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/address"
+          element={
+            <ProtectedRoute>
+              <AddressPage />
+            </ProtectedRoute>
+          }
+        />
+        
+        <Route
+          path="/userallorders"
+          element={
+            <ProtectedRoute>
+              <UserAllOrdersPage/>
+            </ProtectedRoute>
+          }
+        />
+          <Route
+          path="/userallrefundorders"
+          element={
+            <ProtectedRoute>
+              <UserAllRefundOrdersPage/>
+            </ProtectedRoute>
+          }
+        />
+
         <Route
           path="/inbox"
           element={
             <ProtectedRoute>
-              <UserInbox />
+              <UserInboxPage />
             </ProtectedRoute>
           }
         />

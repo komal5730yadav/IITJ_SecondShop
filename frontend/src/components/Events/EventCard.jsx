@@ -45,10 +45,9 @@ const EventCard = ({ active, data }) => {
             ₹{data.discountPrice}
             </h5>
           </div>
-
         </div>
         <CountDown data={data} />
-        <br />
+        <br/>
         <div className="flex items-center">
           <Link to={`/product/${data._id}?isEvent=true`}>
             <div className={`${styles.button} text-[#fff]`}>See Details</div>
