@@ -99,7 +99,7 @@ const Header = ({ activeHeading }) => {
           </div>
 
           <div className={` bg-[#61666e] h-[50px] my-3 flex items-center justify-center rounded-xl cursor-pointer w-[150px]`}>
-            <Link to={`${isSeller ? "/dashboard" : "/shop-create"}`}>
+            <Link to={`${isSeller ? "/dashboard" : "/create-shop"}`}>
               <h1 className="text-[#fff] flex items-center">
                 {isSeller ? "Go Dashboard" : "Become Seller"}{" "}
                 <IoIosArrowForward className="ml-1" />

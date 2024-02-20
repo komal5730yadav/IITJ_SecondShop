@@ -19,4 +19,4 @@ const ShopCreatePage = () => {
   )
 }
 
-export default ShopCreatePage
+export default ShopCreatePage;

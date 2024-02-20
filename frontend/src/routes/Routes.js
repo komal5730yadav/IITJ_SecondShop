@@ -42,7 +42,6 @@ export {
     OrderSuccessPage,
     ProductDetailsPage,
     ProfilePage,
-    ShopCreatePage,
     SellerActivationPage,
     ShopLoginPage,
     OrderDetailsPage,
@@ -61,4 +60,5 @@ export {
     UserProfilePage,
     TrackOrderssPage,
     ChangePasswordPage,
+    ShopCreatePage,
 };

@@ -7,6 +7,7 @@ import {
   MdOutlinePassword,
   MdOutlineTrackChanges,
 } from "react-icons/md";
+import {  FiShoppingBag } from "react-icons/fi";
 import { TbAddressBook } from "react-icons/tb";
 import { RxPerson } from "react-icons/rx";
 import { Link, useNavigate } from "react-router-dom";
@@ -31,44 +32,44 @@ const navigate = useNavigate();
       });
   };
   return (
-    <div className="w-full h-[90vh] bg-white shadow-sm overflow-y-scroll sticky top-0 left-0 z-10" onClick={() => setActive(1)}>
-      <div className="w-full flex items-center p-4"></div>
+    <div className="w-full h-[90vh] bg-white shadow-sm overflow-y-scroll sticky top-0 left-0 z-10" >
+      <div className="w-full flex items-center p-4">
        <Link to="/userprofile" className="w-full flex item-center">
-        <RxPerson size={20} color={active === 1 ? "#e98a66" : ""} />
+        <RxPerson size={30} color={active === 1 ? "#e98a66" : "#555"} />
         <span
-          className={`pl-3 ${
-            active === 1 ? "text-[#e98a66]" : ""
+          className={`hidden 800px:block pl-2 text-[18px] font-[400]  ${
+            active === 1 ? "text-[#e98a66]" : "text-[#555]"
           } 800px:block hidden`}
         >
           Profile
         </span>
         </Link>
+        </div>
         <div/>
       <div
-        className="flex items-center cursor-pointer w-full mb-8"
-        onClick={() => setActive(2)}
+        className="w-full flex items-center p-4"
       >
          <Link to="/userallorders" className="w-full flex item-center">
         
-        <HiOutlineShoppingBag size={20} color={active === 2 ? "#e98a66" : ""} />
-        <span
-          className={`pl-3 ${
-            active === 2 ? "text-[#e98a66]" : ""
-          } 800px:block hidden`}
+        <FiShoppingBag size={30} color={`${active === 2 ? "#e98a66" : "#555"} `}/>
+        <h5
+          className={`hidden 800px:block pl-2 text-[18px] font-[400] ${
+            active === 2 ? "text-[#e98a66]" : "text-[#555]"
+          }`}
         >
           Orders
-        </span>
+        </h5>
         </Link>
       </div>
       <div
-        className="flex items-center cursor-pointer w-full mb-8"
+        className="w-full flex items-center p-4"
         onClick={() => setActive(3)}
       >
         <Link to ="/userallrefundorders" className="w-full flex item-center">
-        <HiOutlineReceiptRefund size={20} color={active === 3 ? "#e98a66" : ""} />
+        <HiOutlineReceiptRefund size={30} color={active === 3 ? "#e98a66" : "#555"} />
         <span
-          className={`pl-3 ${
-            active === 3 ? "text-[#e98a66]" : ""
+          className={`hidden 800px:block pl-2 text-[18px] font-[400]  ${
+            active === 3 ? "text-[#e98a66]" : "text-[#555]"
           } 800px:block hidden`}
         >
           Refunds
@@ -76,12 +77,12 @@ const navigate = useNavigate();
         </Link>
       </div>
       <div
-        className="flex items-center cursor-pointer w-full mb-8" onClick={() => setActive(4)}> 
+        className="w-full flex items-center p-4" onClick={() => setActive(4)}> 
         <Link to="/inbox" className="w-full flex item-center">
-      <AiOutlineMessage size={20} color={active === 4 ? "#e98a66" : ""} />
+      <AiOutlineMessage size={30} color={active === 4 ? "#e98a66" : "#555"} />
         <span
-          className={`pl-1 ${
-            active === 4 ? "text-[#e98a66]" : ""
+          className={`hidden 800px:block pl-2 text-[18px] font-[400]  ${
+            active === 4 ? "text-[#e98a66]" : "text-[#555]"
           } 800px:block hidden`}
         >
           Inbox
@@ -89,14 +90,14 @@ const navigate = useNavigate();
         </Link>
       </div>
       <div
-        className="flex items-center cursor-pointer w-full mb-8"
+        className="w-full flex items-center p-4"
         onClick={() => setActive(5)}
       >
         <Link to="/trackorderss" className="w-full flex item-center">
-        <MdOutlineTrackChanges size={20} color={active === 5 ? "#e98a66" : ""} />
+        <MdOutlineTrackChanges size={30} color={active === 5 ? "#e98a66" : "#555"} />
         <span
-          className={`pl-3 ${
-            active === 5 ? "text-[#e98a66]" : ""
+          className={`hidden 800px:block pl-2 text-[18px] font-[400]  ${
+            active === 5 ? "text-[#e98a66]" : "text-[#555]"
           } 800px:block hidden`}
         >
           Track Order
@@ -105,14 +106,14 @@ const navigate = useNavigate();
       </div>
 
       <div
-        className="flex items-center cursor-pointer w-full mb-8"
+        className="w-full flex items-center p-4"
         onClick={() => setActive(6)}
       >
         <Link to="/ChangePassword" className="w-full flex item-center">
-        <RiLockPasswordLine size={20} color={active === 6 ? "#e98a66" : ""} />
+        <RiLockPasswordLine size={30} color={active === 6 ? "#e98a66" : "#555"} />
         <span
-          className={`pl-3 ${
-            active === 6 ? "text-[#e98a66]" : ""
+          className={`hidden 800px:block pl-2 text-[18px] font-[400]  ${
+            active === 6 ? "text-[#e98a66]" : "text-[#555]"
           } 800px:block hidden`}
         >
           Change Password
@@ -121,15 +122,15 @@ const navigate = useNavigate();
       </div>
 
       <div
-        className="flex items-center cursor-pointer w-full mb-8"
+        className="w-full flex items-center p-4"
 
         onClick={() => setActive(7)}
       >
         <Link to="/address" className="w-full flex item-center">
-        <TbAddressBook size={20} color={active === 7 ? "#e98a66" : ""} />
+        <TbAddressBook size={30} color={active === 7 ? "#e98a66" : "#555"} />
         <span
-          className={`pl-3 ${
-            active === 7 ? "text-[#e98a66]" : ""
+          className={`hidden 800px:block pl-2 text-[18px] font-[400]  ${
+            active === 7 ? "text-[#e98a66]" : "text-[#555]"
           } 800px:block hidden`}
         >
           Address
@@ -137,19 +138,35 @@ const navigate = useNavigate();
         </Link>
       </div>
 
+      <div className="w-full flex items-center p-4 cursor-pointer">
+      <div
+        className="w-full flex items-center"
+        onClick={logoutHandler}
+      >
+        <AiOutlineLogin size={30} color={active === 8 ? "#e98a66" : "#555"} />
+        <span
+          className={`hidden 800px:block pl-2 text-[18px] font-[400]  ${
+            active === 8 ? "text-[#e98a66]" : "text-[#555]"
+          } 800px:block hidden`}
+        >
+          Log Out
+        </span>
+      </div>
+    </div>
+    <div className="w-full flex items-center p-4">
       {user && user?.role === "Admin" && (
         <Link to="/admin/dashboard">
           <div
-            className="flex items-center cursor-pointer w-full mb-8"
+            className="w-full flex items-center"
             onClick={() => setActive(8)}
           >
             <MdOutlineAdminPanelSettings
-              size={20}
-              color={active === 7 ? "#e98a66" : ""}
+              size={30}
+              color={active === 9 ? "#e98a66" : "#555"}
             />
             <span
-              className={`pl-3 ${
-                active === 8 ? "text-[#e98a66]" : ""
+              className={`hidden 800px:block pl-2 text-[18px] font-[400]  ${
+                active === 9 ? "text-[#e98a66]" : "text-[#555]"
               } 800px:block hidden`}
             >
               Admin Dashboard
@@ -157,18 +174,6 @@ const navigate = useNavigate();
           </div>
         </Link>
       )}
-      <div
-        className="single_item flex items-center cursor-pointer w-full mb-8"
-        onClick={logoutHandler}
-      >
-        <AiOutlineLogin size={20} color={active === 8 ? "#e98a66" : ""} />
-        <span
-          className={`pl-3 ${
-            active === 8 ? "text-[#e98a66]" : ""
-          } 800px:block hidden`}
-        >
-          Log Out
-        </span>
       </div>
     </div>
   );

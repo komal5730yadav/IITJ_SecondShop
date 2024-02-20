@@ -211,13 +211,10 @@ const Userin = () => {
     
     <>
     
-    <div className="flex items-start justify-between w-full">
-
-    
-    <div className="w-[75%] m-5 bg-white h-[95vh] overflow-y-scroll absolute  right-0 rounded">
+    <div className="w-[100%] bg-white m-5 h-[85vh] overflow-y-scroll rounded">
       {!open && (
         <>
-          <h1 className="text-center text-[30px] py-3 mb-3 font-Poppins">
+          <h1 className="text-center text-[30px] py-3 mb-3 font-Poppins ">
             All Messages
           </h1>
           {/* All messages list */}
@@ -255,7 +252,7 @@ const Userin = () => {
         />
       )}
     </div>
-    </div>
+    
     </>
   );
 };
