@@ -52,7 +52,7 @@ const Header = ({ activeHeading }) => {
 
   return (
     <>
-      <div className={`${styles.section}`}>
+      <div className={`w-[50%] mx-auto`}>
         <div className="hidden 800px:h-[50px] 800px:my-[20px] 800px:flex items-center justify-between ">
           <div>
             <Link to="/">
@@ -60,12 +60,12 @@ const Header = ({ activeHeading }) => {
                 src="https://i.postimg.cc/SNm5HtFm/iitj-secondshop-high-resolution-logo-black-transparent-3.png"
                 alt=""
                 style={{ filter: "brightness(1) invert(0)" }}
-                className="mt-4 h-8 cursor-pointer"
+                className="mt-4 h-9  800px:w-[20%]  cursor-pointer absolute left-10 top-5"
               />
             </Link>
           </div>
           {/* search box */}
-          <div className="w-[50%] relative">
+          <div className=" 800px:w-[90%] relative justify-center">
             <input
               type="text"
               placeholder="Search Product..."
@@ -98,7 +98,7 @@ const Header = ({ activeHeading }) => {
             ) : null}
           </div>
 
-          <div className={` bg-[#61666e] h-[50px] my-3 flex items-center justify-center rounded-xl cursor-pointer w-[150px]`}>
+          <div className={` bg-[#61666e] h-[8%] my-3 flex items-center justify-center absolute right-10 rounded-xl cursor-pointer w-[15%]`}>
             <Link to={`${isSeller ? "/dashboard" : "/create-shop"}`}>
               <h1 className="text-[#fff] flex items-center">
                 {isSeller ? "Go Dashboard" : "Become Seller"}{" "}
@@ -107,7 +107,8 @@ const Header = ({ activeHeading }) => {
             </Link>
           </div>
         </div>
-      </div>
+        </div>
+      
 
 
       {/* mobile header */}
@@ -115,7 +116,7 @@ const Header = ({ activeHeading }) => {
         className={`${
           active === true ? "shadow-sm fixed top-0 left-0 z-10" : null
         }
-      w-full h-[60px] bg-[#fff] z-50 top-0 left-0 shadow-sm 800px:hidden`}
+      w-[100%] h-[60px] bg-[#fff] z-50 top-0 left-0 shadow-sm 800px:hidden`}
       >
         <div className="w-full flex items-center justify-between cursor-pointer">
           <div>
@@ -231,6 +232,7 @@ const Header = ({ activeHeading }) => {
                         className="w-[60px] h-[60px] rounded-full border-[3px] bg-black"
                       />
                     </Link>
+                    {user.name} :)
                   </div>
                 ) : (
                   <>
@@ -238,7 +240,7 @@ const Header = ({ activeHeading }) => {
                       to="/login"
                       className="text-[18px] pr-[10px] text-[#000000b7]"
                     >
-                      Login /
+                      Login |
                     </Link>
                     <Link
                       to="/sign-up"

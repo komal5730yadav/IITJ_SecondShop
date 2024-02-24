@@ -231,7 +231,7 @@ const ProductDetails = ({ data }) => {
                     onClick={handleMessageSubmit}
                   >
                     <span className="text-white flex items-center">
-                      Send Message <AiOutlineMessage className="ml-1" />
+                      Sendi Message <AiOutlineMessage className="ml-1" />
                     </span>
                   </div>
                 </div>

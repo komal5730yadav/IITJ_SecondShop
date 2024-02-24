@@ -3,15 +3,14 @@ import { Link } from "react-router-dom";
 import styles from "../../styles/styles";
 import { CgProfile } from "react-icons/cg";
 import DropDown from "../Layout/DropDown";
-import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowDown } from "react-icons/io";
 import Navbar from "../Layout/Navbar";
 import { BiMenuAltLeft } from "react-icons/bi";
 import Cart from "../cart/Cart";
 import Wishlist from "../Wishlist/Wishlist";
-import { categoriesData, productData } from "../../static/data";
+import { categoriesData } from "../../static/data";
 import {
   AiOutlineHeart,
-  AiOutlineSearch,
   AiOutlineShoppingCart,
 } from "react-icons/ai";
 import { useSelector } from "react-redux";

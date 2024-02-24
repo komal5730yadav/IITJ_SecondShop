@@ -33,7 +33,7 @@ const EventsPage = () => {
         <div>
           <Header activeHeading={4} />
           <AddHeader activeHeading={4} />
-          <div className={`${styles.section}`}>
+          <div className={`${styles.section} mb-12`}>
           {data && data.map((i, index) => <EventCard active={true} data={i} key={index} />)}
           {/* <EventCard active={true} data={allEvents && allEvents[0]} /> */}
         </div>

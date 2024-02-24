@@ -54,13 +54,13 @@ const AdminHeader = () => {
               className="mx-5 cursor-pointer"
             />
           </Link>
-
-
+          <Link to="/admin/dashboard">
             <img
               src={`${user?.avatar?.url}`}
               alt=""
               className="w-[50px] h-[50px] rounded-full object-cover"
             />
+            </Link>
         </div>
       </div>
     </div>

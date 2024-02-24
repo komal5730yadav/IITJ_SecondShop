@@ -3,16 +3,17 @@ import AddHeader from '../components/Layout/AddHeader';
 import ProfileSidebar from '../components/Profile/ProfileSidebar';
 import UserProfile from '../components/Shop/UserProfile';
 import styles from '../styles/styles';
+import UserDashboardHeader from '../components/Layout/UserDashboardHeader';
 
 const UserProfilePage = () => {
   return (
     <div>
-    <AddHeader />
-    <div className={`${styles.section} flex bg-[#f5f5f5] py-10`}>
-    <div className="w-[50px] 800px:w-[335px] sticky 800px:mt-0 mt-[18%]">
+    <UserDashboardHeader />
+    <div className="w-full flex">
+    <div className="flex items-start justify-between w-full">
+    <div className="w-[80px] 800px:w-[330px]">
       <ProfileSidebar active={1}/>
       </div>
-      <div className="w-full justify-center flex">
        <UserProfile/>
        </div>
     </div>

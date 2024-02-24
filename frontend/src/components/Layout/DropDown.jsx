@@ -10,7 +10,7 @@ const DropDown = ({ categoriesData, setDropDown }) => {
     window.location.reload();
   };
   return (
-    <div className="pb-4 w-[270px] bg-gray-700 bg-opacity-50  absolute z-30 rounded-b-md shadow-sm">
+    <div className="pb-4 w-[250px] bg-gray-700 bg-opacity-60 absolute z-30 rounded-b-md shadow-sm overflow-y-auto max-h-[434px]">
       {categoriesData &&
         categoriesData.map((i, index) => (
           <div

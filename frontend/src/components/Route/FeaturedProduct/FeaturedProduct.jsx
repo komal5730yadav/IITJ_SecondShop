@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const FeaturedProduct = () => {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: false,
     speed: 500,
     slidesToShow: 5,

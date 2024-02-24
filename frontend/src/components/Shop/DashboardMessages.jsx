@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useRef, useState } from "react";
 import { useEffect } from "react";
 import {  server } from "../../server";
-import { useDispatch, useSelector } from "react-redux";
+import {  useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { AiOutlineArrowRight, AiOutlineSend } from "react-icons/ai";
 import styles from "../../styles/styles";
@@ -205,7 +205,7 @@ const DashboardMessages = () => {
   }, [messages]);
 
   return (
-    <div className="w-[90%] mt-1 bg-white m-5 h-[85vh] overflow-y-scroll rounded">
+    <div className="w-[100%] mt-1 bg-white ml-0 mr-0 pt-2 h-[85vh] overflow-y-scroll rounded">
       {!open && (
         <>
           <h1 className="text-center text-[30px] py-3 font-Poppins">
@@ -283,7 +283,7 @@ const MessageList = ({
 
   return (
     <div
-      className={`w-full whitespace-normal flex p-3 px-3 ${
+      className={`w-full whitespace-normal flex p-3 ml-0 mr-0 mt-0 ${
         active === index ? "bg-[#00000010]" : "bg-transparent"
       }  cursor-pointer`}
       onClick={(e) =>

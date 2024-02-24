@@ -41,14 +41,15 @@ const Hero = ({activeHeading}) => {
       >
             
  <div
-          className={`w-11/12  mx-auto mt-[-40px] relative ${styles.noramlFlex} justify-between`}
+          className={`w-11/12  mx-auto absolute top-1  ${styles.noramlFlex} justify-between`}
         >
           {/* categories */}
-          <div onClick={() => setDropDown(!dropDown)}>
-            <div className="relative h-[60px] mt-[10px] w-[270px] hidden 1000px:block">
+          <div onClick={() => setDropDown(!dropDown)} >
+            
+            <div className="relative ml-5 h-[60px] mt-[10px] w-[250px] hidden 800px:block">
               <BiMenuAltLeft size={30} className="absolute top-3 left-2" />
               <button
-                className={`h-[100%] w-full flex justify-between items-center pl-10 bg-gray-700 bg-opacity-50 font-sans text-lg font-[500] select-none rounded-t-md`}
+                className={`h-[100%] w-full flex justify-between items-center pl-10 bg-gray-700 bg-opacity-60 font-sans text-lg font-[500] select-none rounded-t-md`}
               >
                 All Categories
               </button>
@@ -65,12 +66,13 @@ const Hero = ({activeHeading}) => {
               ) : null}
             </div>
           </div>
+          
           {/* navitems */}
-          <div className={"flex items-center"}>
+          <div className={"flex items-center pt-[20px] 800px:mt-[2px]"}>
             <Navbar active={activeHeading} />
           </div>
 
-          <div className="flex">
+          <div className="flex pt-[20px] 800px:mt-[2px]">
             <div className={`${styles.noramlFlex}`}>
               <div
                 className="relative cursor-pointer mr-[15px]"
@@ -127,7 +129,7 @@ const Hero = ({activeHeading}) => {
         </div>
       </div>
       </div>
-      <div className={`mx-auto w-[90%] 800px:w-[60%]`}>
+      <div className={`mx-auto w-[90%] 800px:w-[50%]`}>
         <h1
           className={`text-[35px] leading-[1.2] 800px:text-[60px] text-[#E2DFD2] font-[600] capitalize`}
         >
