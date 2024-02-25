@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 const FeaturedProduct = () => {
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -23,13 +23,13 @@ const FeaturedProduct = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
         },
       },
       {
         breakpoint: 576,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
         },
       },
     ],
