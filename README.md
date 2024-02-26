@@ -1,4 +1,5 @@
-IITJ_SecondShop
+IITJ_SecondShop Deployed : https://iitj-second-shoppify.vercel.app/
+
 Welcome to IITJ_SecondShop – an ongoing development project leveraging the power of the MERN (MongoDB, Express.js, React.js, Node.js) stack and Tailwind CSS. This e-commerce platform is designed to be fully responsive, ensuring a seamless experience across devices.
 
 Overview
