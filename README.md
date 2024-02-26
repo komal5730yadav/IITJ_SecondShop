@@ -30,18 +30,18 @@ Capability to update relevant information.
 
 Screenshots
 For a visual overview of the features mentioned above, please refer to the attached screen captures showcasing each functionality in detail.
-![React App - Personal - Microsoft​ Edge 2_27_2024 12_59_02 AM](https://github.com/komal5730yadav/IITJ_SecondShop/assets/133533646/10cbae28-15a6-4db9-b344-9af37fa3c922)
+![Photos 2_27_2024 1_09_28 AM](https://github.com/komal5730yadav/IITJ_SecondShop/assets/133533646/0f23b489-6785-4da8-ade2-7477510516e4)
 
+![React App - Personal - Microsoft​ Edge 2_27_2024 12_59_02 AM](https://github.com/komal5730yadav/IITJ_SecondShop/assets/133533646/10cbae28-15a6-4db9-b344-9af37fa3c922)
 ![React App - Personal - Microsoft​ Edge 2_27_2024 12_58_13 AM](https://github.com/komal5730yadav/IITJ_SecondShop/assets/133533646/5070e096-26e0-40d2-bac9-f20dcd13cb92)
-![React App - Personal - Microsoft​ Edge 2_27_2024 12_54_20 AM](https://github.com/komal5730yadav/IITJ_SecondShop/assets/133533646/af299b30-5915-45b4-8ba9-04c96b76be41)
 ![React App - Personal - Microsoft​ Edge 2_27_2024 12_54_02 AM](https://github.com/komal5730yadav/IITJ_SecondShop/assets/133533646/344f5aaf-d1dd-4ec0-ad53-dba043ce72f6)
+![React App - Personal - Microsoft​ Edge 2_27_2024 12_54_20 AM](https://github.com/komal5730yadav/IITJ_SecondShop/assets/133533646/af299b30-5915-45b4-8ba9-04c96b76be41)
 
 ![Screenshot (16)](https://github.com/komal5730yadav/IITJ_SecondShop/assets/133533646/cebf8ee0-8f23-4250-bd78-492ea5fc6100)
-![React App - Personal - Microsoft​ Edge 2_27_2024 1_00_11 AM](https://github.com/komal5730yadav/IITJ_SecondShop/assets/133533646/247ac3aa-33f9-4502-bbb0-5fc645d6e957)
-
 ![Screenshot (17)](https://github.com/komal5730yadav/IITJ_SecondShop/assets/133533646/23e82025-2682-4b36-a339-fec871871799)
 ![Screenshot (18)](https://github.com/komal5730yadav/IITJ_SecondShop/assets/133533646/0d4a9d57-cec9-4adb-b935-4ac60ed3c1b7)
 ![Screenshot (19)](https://github.com/komal5730yadav/IITJ_SecondShop/assets/133533646/450183e2-07f0-4d28-a531-06952ff170c2)
+![React App - Personal - Microsoft​ Edge 2_27_2024 1_00_11 AM](https://github.com/komal5730yadav/IITJ_SecondShop/assets/133533646/247ac3aa-33f9-4502-bbb0-5fc645d6e957)
 
 
 
