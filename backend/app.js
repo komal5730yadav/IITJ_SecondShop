@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 app.use(cors({
-  origin: ['https://iitj-second-shoppify.vercel.app/',],
+  origin: 'https://iitj-second-shoppify.vercel.app/',
   credentials: true
 }));
 
